@@ -10,7 +10,7 @@ services:
     working_dir: /tmp/wk
     command: >
       bash -c "parallel-fastq-dump --sra-id input/${ID}.sra --threads ${THREADS} --split-files --gzip &&
-      mkdir output/${ID} &&
+      mkdir -p output/${ID} &&
       mv *.fastq.gz output/${ID}/"
 
   fastp:
