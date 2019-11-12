@@ -1,0 +1,5 @@
+Install sra data.
+
+Run this docker command.
+
+docker run --rm -v /Docker_compose_STAR/input:/root/ncbi/public/sra inutano/sra-toolkit prefetch SRR7508944
